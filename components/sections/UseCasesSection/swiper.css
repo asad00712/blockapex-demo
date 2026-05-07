@@ -1,0 +1,11 @@
+/* Use-cases slider — elevate the 2nd visible slide (sibling of active) */
+
+.use-cases-slider .swiper-slide {
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  display: flex;
+  height: auto;
+}
+
+.use-cases-slider .swiper-slide-active + .swiper-slide {
+  transform: translateY(-28px);
+}
